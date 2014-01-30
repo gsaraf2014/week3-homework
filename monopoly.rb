@@ -13,26 +13,28 @@ special_squares = { :good => ["Go", "Free Parking", "Just Visiting"],
 
 #Q1. How much does it cost to buy Baltic?
 #A1: Here's the answer:
-puts cheap_property[:price]
+puts "It costs $"  + cheap_property[:price].to_s + " to buy Baltic"
 
 #Q2. How much does it cost to buy Boardwalk?
 #A2: Your code goes here:
-
-
+puts "It costs $"  + rich_property[:price].to_s + " to buy Boardwalk"
+# puts ans
 
 #Q3. How much is rent for Baltic?
 #A3: Your code goes here:
-
+ans = cheap_property[:rent]
+puts "The rent for Baltic is $" + ans.to_s
 
 
 #Q4. How much does it cost to buy New York Ave?
 #A4: Your code goes here:
-
-
+ans = more_properties[2][:price]
+puts "It costs $" + ans.to_s + " to buy New York Ave"
 
 #Q5: How many "good" special squares are there?
 #A5: Your code goes here:
-
-
-
+ans = special_squares[:good].count
+puts "There are " + ans.to_s + " good special squares"
+puts """"
+puts "You have reached the End of the Internet"
 
